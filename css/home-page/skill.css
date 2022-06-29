@@ -1,0 +1,135 @@
+/* 
+ * SKILL
+ */
+#skill {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 5rem;
+  position: relative;
+}
+
+.skill-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.skill-heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.skill-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item svg {
+  width: 135px;
+}
+
+.skill-item:nth-child(3) svg,
+.skill-item:nth-child(4) svg {
+  width: 120px;
+}
+
+.skill-item:hover:nth-child(1) svg {
+  fill: #5cd0fa;
+}
+
+.skill-item:hover:nth-child(2) svg {
+  fill: #f8a829;
+}
+
+.skill-item:hover:nth-child(3) svg {
+  fill: #f64c23;
+}
+
+.skill-item:hover:nth-child(4) svg {
+  fill: #0074d9;
+}
+
+.skill-item:hover:nth-child(5) svg {
+  fill: #ffdc00;
+}
+
+.skill-desc {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.skill-item:nth-child(3) .skill-desc,
+.skill-item:nth-child(4) .skill-desc {
+  text-transform: uppercase;
+}
+
+.skill-item:hover:nth-child(1) .skill-desc {
+  color: #5cd0fa;
+}
+
+.skill-item:hover:nth-child(2) .skill-desc {
+  color: #f8a829;
+}
+
+.skill-item:hover:nth-child(3) .skill-desc {
+  color: #f64c23;
+}
+
+.skill-item:hover:nth-child(4) .skill-desc {
+  color: #0074d9;
+}
+
+.skill-item:hover:nth-child(5) .skill-desc {
+  color: #ffdc00;
+}
+
+@media (max-width: 740px) {
+  #skill {
+    min-height: 90vh;
+    padding: 1rem 1rem 5rem;
+  }
+
+  .skill-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .skill-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-item svg {
+    width: 100px;
+  }
+
+  .skill-item:nth-child(3) svg,
+  .skill-item:nth-child(4) svg {
+    width: 88px;
+  }
+
+  .skill-desc {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+}

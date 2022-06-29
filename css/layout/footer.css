@@ -1,0 +1,143 @@
+/* 
+ * FOOTER
+ */
+#footer {
+  position: fixed;
+  top: 50%;
+  left: 4rem;
+  transform: translateY(-50%);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.copyright {
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-item {
+  width: 35px;
+  height: 35px;
+}
+
+.social-item:hover:nth-child(1) svg {
+  fill: #555;
+}
+
+.social-item:hover:nth-child(2) svg {
+  fill: #8134af;
+}
+
+.social-item:hover:nth-child(3) svg {
+  fill: #0e76a8;
+}
+
+.social-item:hover:nth-child(1) .social-link p {
+  color: #555;
+}
+
+.social-item:hover:nth-child(2) .social-link p {
+  color: #8134af;
+}
+
+.social-item:hover:nth-child(3) .social-link p {
+  color: #0e76a8;
+}
+
+.social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.social-link p {
+  position: absolute;
+  font-size: 0.9rem;
+  left: 3rem;
+  display: none;
+  opacity: 0.7;
+}
+
+.social-link:hover p {
+  display: block;
+}
+
+.social-line-border {
+  height: 3rem;
+  border: 1px solid var(--color-black);
+}
+
+@media (max-width: 1280px) {
+  #footer {
+    position: relative;
+    height: 5rem;
+    left: 0;
+    bottom: 0;
+    transform: translateY(0);
+    background: var(--color-black);
+    color: var(--color-white);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    writing-mode: unset;
+    transform: rotate(0deg);
+  }
+
+  .social-list {
+    flex-direction: row;
+  }
+
+  .social-link svg {
+    fill: var(--color-white);
+  }
+
+  .social-link:hover p {
+    display: none;
+  }
+
+  .social-line-border {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #footer {
+    padding: 0 1rem;
+  }
+
+  .social-list {
+    gap: 0.5rem;
+  }
+
+  .social-link svg {
+    fill: var(--color-white);
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}

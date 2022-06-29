@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-black: #222;
+  --color-white: #fff;
+
+  --color-gray-200: hsl(0, 0%, 80%);
+  --color-gray-500: hsl(0, 0%, 50%);
+
+  --box-shadow: rgba(0, 0, 0, 0.5);
+
+  --max-width: 1000px;
+
+  --transition: all 0.5s ease;
+}
+
+.dark-theme {
+  --color-black: #fff;
+  --color-white: #222;
+
+  --box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea {
+  resize: none;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-gray-200);
+}

@@ -1,0 +1,42 @@
+/* LAYOUT */
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+/* HOMEPAGE */
+@import url("./home-page/home.css");
+@import url("./home-page/about.css");
+@import url("./home-page/works.css");
+@import url("./home-page/skill.css");
+@import url("./home-page/contact.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  position: relative;
+  background: var(--color-white);
+  color: var(--color-black);
+  /* transition: var(--transition); */
+}
+
+svg {
+  fill: var(--color-black);
+}
+
+.gradient-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 200%;
+  opacity: 0.5;
+}
+
+/* #header,
+#footer {
+  display: none;
+} */

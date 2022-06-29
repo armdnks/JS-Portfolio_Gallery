@@ -1,0 +1,86 @@
+/* 
+ * CONTACT
+ */
+#contact {
+  width: 100%;
+  min-height: 50vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  padding-bottom: 13rem;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.email-input,
+.message-input {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-black);
+  border-radius: 0.25rem;
+}
+
+.message-input {
+  height: 10rem;
+}
+
+.submit-btn {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.submit-btn:hover {
+  background: none;
+  color: var(--color-black);
+  box-shadow: inset 0px 0px 0px 3px var(--color-black);
+}
+
+.submit-btn:active {
+  background: var(--color-black);
+  color: var(--color-white);
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  #contact {
+    padding-bottom: 5rem;
+  }
+  .form-label,
+  .email-input,
+  .message-input,
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}
