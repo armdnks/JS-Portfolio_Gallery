@@ -1,4 +1,4 @@
-import "./home-page/home.js";
+import "./home-page/index.js";
 import "./home-page/about.js";
 import "./home-page/works.js";
 import "./home-page/skill.js";

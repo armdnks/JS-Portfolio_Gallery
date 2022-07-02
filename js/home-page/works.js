@@ -8,10 +8,10 @@ async function getGallery() {
     const worksImages = data
       .filter((item) => item.isFeatured === true)
       .map((item) => {
-        const { id, image, title, brand, year } = item;
+        const { id, imageUrl, title, brand, year } = item;
         return /*html*/ `
         <div class="works-item" data-id="${id}" data-aos="fade-up">
-          <img src="${image}" alt="works" class="works-img" />
+          <img src="${imageUrl}" alt="works" class="works-img" />
           <div class="works-desc">
             <h1 class="works-title">${title}</h1>
             <h1 class="works-brand">${brand}</h1>

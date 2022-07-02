@@ -16,7 +16,6 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   position: relative;
   background: var(--color-white);
