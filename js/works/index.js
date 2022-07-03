@@ -24,9 +24,16 @@ async function loadImages() {
 }
 
 form.addEventListener("keyup", searchImage);
+form.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    searchImage(e);
+  }
+});
+
 function searchImage(e) {
   const searchString = e.target.value.toLowerCase();
-  const filteredImages = resultImages.filter((image) => {
+  let filteredImages = resultImages.filter((image) => {
     return image.title.toLowerCase().includes(searchString) || image.brand.toLowerCase().includes(searchString);
   });
 

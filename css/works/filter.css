@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .works-filter-btn {
@@ -41,6 +41,8 @@
   text-transform: capitalize;
   position: relative;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .works-filter-btn.active::after {
@@ -51,4 +53,14 @@
   top: 130%;
   left: 0;
   border-bottom: 2px solid var(--color-black);
+}
+
+@media (max-width: 900px) {
+  .search-input {
+    font-size: 1.2rem;
+  }
+
+  .works-filter-btn {
+    font-size: 1.2rem;
+  }
 }

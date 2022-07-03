@@ -30,6 +30,7 @@ body {
   width: 100%;
   max-width: var(--max-width);
   margin: auto;
+  padding: 0 1rem;
 }
 
 .back-btn {
@@ -42,4 +43,5 @@ body {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 1rem;
 }
