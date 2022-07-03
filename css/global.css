@@ -4,6 +4,8 @@
   --color-black: #222;
   --color-white: #fff;
 
+  --color-typescript: #3178c6;
+
   --color-gray-200: hsl(0, 0%, 80%);
   --color-gray-500: hsl(0, 0%, 50%);
 
@@ -17,6 +19,7 @@
 .dark-theme {
   --color-black: #fff;
   --color-white: #222;
+  --color-typescript: #fff;
 
   --box-shadow: rgba(0, 0, 0, 0.7);
 }
@@ -38,7 +41,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: inherit;
+  /* color: inherit; */
 }
 
 ol,

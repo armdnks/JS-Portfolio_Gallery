@@ -15,6 +15,7 @@ async function loadImages() {
   try {
     const res = await fetch(CONSTANTS.PORTFOLIO_URL);
     resultImages = await res.json();
+    resultImages.splice(-1);
     displayImages(resultImages);
     displayButtons(resultImages);
   } catch (error) {
@@ -101,6 +102,7 @@ function getSingleImage(e) {
 function displayButtons(images) {
   const buttons = [...new Set(images.map((image) => image.brand))];
   const filterButtons = buttons
+    .sort()
     .map((brand) => {
       const singleBrand = `<li class="works-filter-btn" data-brand="${brand}">${brand}</li>`;
       return singleBrand;

@@ -5,6 +5,8 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  cursor: zoom-out;
   display: none;
 }
 
@@ -20,28 +22,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 5rem 5rem var(--box-shadow));
+  filter: drop-shadow(0 7rem 3rem var(--box-shadow));
 }
 
 .modal-img {
   height: 640px;
   object-fit: contain;
   border-radius: 0.4rem;
-  /* box-shadow: 0 7rem 7rem -3rem var(--box-shadow); */
+  filter: drop-shadow(0 7rem 3rem rgba(0, 0, 0, 0.3));
 }
 
 .modal-content {
   width: 100%;
   max-width: 360px;
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #fff;
+  color: #222;
   padding: 2rem;
   border-top-right-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
 }
 
 .modal-group {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.modal-group:last-child {
+  border-bottom: unset;
 }
 
 .modal-label {
@@ -54,8 +62,9 @@
 .modal-brand,
 .modal-year,
 .modal-country,
-.modal-category {
-  font-weight: 300;
+.modal-category,
+.modal-desc {
+  font-weight: 400;
 }
 
 .modal-title,

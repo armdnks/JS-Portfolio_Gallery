@@ -1,48 +1,82 @@
 [
   {
-    "id": "b67e6938",
+    "id": "1",
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425369/portfolio/hc-2022-flyer_upmyxp.jpg",
-    "title": "Hydro Coco Flyer",
+    "title": "Flyer",
     "brand": "Hydro Coco",
     "country": "France",
-    "year": 2019,
+    "year": 2022,
+    "category": ["B2B Event"],
     "isFeatured": true
   },
   {
-    "id": "7a249cd8",
+    "id": "2",
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425438/portfolio/pmg-2019-pack_seejbt.jpg",
     "title": "Tablet Packaging",
     "brand": "Promag",
     "country": "Cambodia",
     "year": 2019,
+    "category": ["drugstore", "supermarket"],
     "isFeatured": true
   },
   {
-    "id": "0083a9c2",
+    "id": "3",
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425439/portfolio/wds-2020-masker_jqutou.jpg",
     "title": "Face Mask",
     "brand": "Woods'",
     "country": "Cambodia",
     "year": 2020,
+    "category": ["out of home"],
     "isFeatured": true
   },
   {
-    "id": "b1659f64",
+    "id": "4",
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425639/portfolio/pmg-2019-blister_fhtdtv.jpg",
     "title": "Tablet Blister",
     "brand": "Promag",
     "country": "Cambodia",
+    "category": ["drugstore", "supermarket"],
     "year": 2019,
-    "isFeatured": true
+    "isFeatured": false
   },
-
   {
-    "id": "10b394e6",
+    "id": "5",
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425659/portfolio/nph-2020-socmed_fxszw3.jpg",
     "title": "Social Media Template",
     "brand": "Nephrisol",
     "year": 2020,
     "country": "Philippines",
-    "isFeatured": true
+    "category": ["social media"],
+    "isFeatured": false
+  },
+  {
+    "id": "6",
+    "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656848633/portfolio/hc-2019-pack_process_te9uv9.jpg",
+    "title": "D.I. Process",
+    "brand": "Hydro Coco",
+    "year": 2019,
+    "country": "UAE",
+    "category": ["Online Store", "Offline Store"],
+    "isFeatured": false
+  },
+  {
+    "id": "7",
+    "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656848632/portfolio/dsol-2021-payday_k67qc2.jpg",
+    "title": "Payday Promo",
+    "brand": "Diabetasol",
+    "year": 2021,
+    "country": "Malaysia",
+    "category": ["Lazada"],
+    "isFeatured": false
+  },
+  {
+    "id": "0",
+    "imageUrl": "../img/placeholder.jpg",
+    "title": "title",
+    "brand": "brand",
+    "year": 9999,
+    "country": "country",
+    "category": ["category"],
+    "isFeatured": false
   }
 ]
