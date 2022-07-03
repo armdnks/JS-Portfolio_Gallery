@@ -44,37 +44,5 @@
     "year": 2020,
     "Country": "Philippines",
     "isFeatured": true
-  },
-  {
-    "id": "0c08298c",
-    "imageUrl": "https://images.unsplash.com/photo-1655579934784-d988195a1319?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-    "title": "300 Miles to Heaven (300 Mil do Nieba)",
-    "brand": "Topiramate",
-    "year": 2016,
-    "isFeatured": false
-  },
-  {
-    "id": "ff60eb00",
-    "imageUrl": "https://images.unsplash.com/photo-1638913971251-832d29947de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-    "title": "Wishing Stairs (Yeogo goedam 3: Yeowoo gyedan)",
-    "brand": "ZESTORETIC",
-    "year": 2022,
-    "isFeatured": false
-  },
-  {
-    "id": "afcc5d32",
-    "imageUrl": "https://images.unsplash.com/photo-1649859394614-dc4f7290b7f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-    "title": "Local Color",
-    "brand": "Biotox Para",
-    "year": 2021,
-    "isFeatured": false
-  },
-  {
-    "id": "2166ffb6",
-    "imageUrl": "https://images.unsplash.com/photo-1655552360620-5212a1b24961?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
-    "title": "Flatfoot on the Nile (Piedone d'Egitto)",
-    "brand": "Isoniazid",
-    "year": 2022,
-    "isFeatured": false
   }
 ]

@@ -1,13 +1,13 @@
 /* LAYOUT */
-@import url("./layout/header.css");
-@import url("./layout/footer.css");
+@import url("../layout/header.css");
+@import url("../layout/footer.css");
 
 /* HOMEPAGE */
-@import url("./home-page/home.css");
-@import url("./home-page/about.css");
-@import url("./home-page/works.css");
-@import url("./home-page/skill.css");
-@import url("./home-page/contact.css");
+@import url("./home.css");
+@import url("./about.css");
+@import url("./works.css");
+@import url("./skill.css");
+@import url("./contact.css");
 
 html {
   scroll-behavior: smooth;

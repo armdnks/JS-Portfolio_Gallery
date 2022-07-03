@@ -4,6 +4,8 @@ import "./home-page/works.js";
 import "./home-page/skill.js";
 import "./home-page/contact.js";
 
+import "./layout/header.js";
+
 AOS.init({
   duration: 700,
   once: true,

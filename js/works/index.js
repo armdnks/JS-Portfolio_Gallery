@@ -1,3 +1,7 @@
+import { CONSTANTS } from "../utils/constants.js";
+
+const htmlElement = document.documentElement;
+htmlElement.classList.add(localStorage.getItem("theme"));
 const worksContainer = document.querySelector(".works-container");
 const worksFilter = document.querySelector(".works-filter");
 const form = document.querySelector(".input-form");
@@ -8,7 +12,7 @@ let resultImages = [];
 window.addEventListener("DOMContentLoaded", loadImages);
 async function loadImages() {
   try {
-    const res = await fetch("../../data/data.json");
+    const res = await fetch(CONSTANTS.PORTFOLIO_URL);
     resultImages = await res.json();
     displayImages(resultImages);
     displayButtons(resultImages);
@@ -25,7 +29,12 @@ function searchImage(e) {
   });
 
   if (filteredImages.length < 1) {
-    worksContainer.innerHTML = "<h1>Sorry, no images matched your search</h1>";
+    worksContainer.innerHTML = `
+      <div class="works-not-found">
+        <img class="works-not-found-img" src="${CONSTANTS.WORKS_NOT_FOUND_IMG}" alt="not-found-img"/>
+        <h1 class="works-not-found-text">${CONSTANTS.WORKS_NOT_FOUND_TEXT}</h1>
+      </div>
+    `;
   } else {
     displayImages(filteredImages);
   }
@@ -34,12 +43,19 @@ function searchImage(e) {
 worksFilter.addEventListener("click", (e) => {
   const target = e.target;
   let filteredImages;
+
   if (target.classList.contains("works-filter-btn")) {
-    if (target.dataset.id === "all") {
+    const worksFilterBtn = document.querySelectorAll(".works-filter-btn");
+    worksFilterBtn.forEach((button) => {
+      button.classList.remove("active");
+      target.classList.add("active");
+    });
+
+    if (target.dataset.brand === "all") {
       filteredImages = [...resultImages];
     } else {
       filteredImages = resultImages.filter((image) => {
-        return image.brand === target.dataset.id;
+        return image.brand === target.dataset.brand;
       });
     }
     searchInput.value = "";
@@ -50,12 +66,12 @@ worksFilter.addEventListener("click", (e) => {
 function displayImages(images) {
   const workImages = images
     .map((image) => {
-      const { id, imageUrl } = image;
+      const { id, imageUrl, title, year } = image;
       return `
         <div class="works-item" data-id="${id}">
             <div class="works-text">
-                <h1 class="works-title">hello world</h1>
-                <h1 class="works-year">2022</h1>
+                <h1 class="works-title">${title}</h1>
+                <h1 class="works-year">${year}</h1>
             </div>
             <img src="${imageUrl}" alt="placeholder" class="works-img" />
         </div>
@@ -69,9 +85,10 @@ function displayButtons(images) {
   const buttons = [...new Set(images.map((image) => image.brand))];
   const filterButtons = buttons
     .map((brand) => {
-      return `<li class="works-filter-btn" data-id="${brand}">${brand}</li>`;
+      const singleBrand = `<li class="works-filter-btn" data-brand="${brand}">${brand}</li>`;
+      return singleBrand;
     })
     .join("");
-
-  worksFilter.insertAdjacentHTML("beforeend", filterButtons);
+  const allBrand = `<li class="works-filter-btn active" data-brand="all">all</li>`;
+  worksFilter.innerHTML = allBrand + filterButtons;
 }

@@ -1,3 +1,4 @@
+// DARK MODE TOGGLE
 const htmlElement = document.documentElement;
 htmlElement.classList.add(localStorage.getItem("theme"));
 
