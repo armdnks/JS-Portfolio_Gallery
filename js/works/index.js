@@ -1,4 +1,5 @@
 import { CONSTANTS } from "../utils/constants.js";
+import { showModal } from "./modal.js";
 
 const htmlElement = document.documentElement;
 htmlElement.classList.add(localStorage.getItem("theme"));
@@ -79,6 +80,22 @@ function displayImages(images) {
     })
     .join("");
   worksContainer.innerHTML = workImages;
+
+  const worksItem = document.querySelectorAll(".works-item");
+  worksItem.forEach((item) => {
+    item.addEventListener("click", getSingleImage);
+  });
+}
+
+function getSingleImage(e) {
+  const target = e.target;
+  let dataId;
+  if (target.classList.contains("works-item")) {
+    dataId = target.dataset.id;
+  } else if (target.classList.contains("works-title") || target.classList.contains("works-year")) {
+    dataId = target.parentElement.parentElement.dataset.id;
+  }
+  showModal(dataId, resultImages);
 }
 
 function displayButtons(images) {

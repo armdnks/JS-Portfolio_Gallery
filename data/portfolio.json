@@ -4,7 +4,7 @@
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425369/portfolio/hc-2022-flyer_upmyxp.jpg",
     "title": "Hydro Coco Flyer",
     "brand": "Hydro Coco",
-    "Country": "France",
+    "country": "France",
     "year": 2019,
     "isFeatured": true
   },
@@ -13,7 +13,7 @@
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425438/portfolio/pmg-2019-pack_seejbt.jpg",
     "title": "Tablet Packaging",
     "brand": "Promag",
-    "Country": "Cambodia",
+    "country": "Cambodia",
     "year": 2019,
     "isFeatured": true
   },
@@ -22,7 +22,7 @@
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425439/portfolio/wds-2020-masker_jqutou.jpg",
     "title": "Face Mask",
     "brand": "Woods'",
-    "Country": "Cambodia",
+    "country": "Cambodia",
     "year": 2020,
     "isFeatured": true
   },
@@ -31,7 +31,7 @@
     "imageUrl": "https://res.cloudinary.com/wokeoke/image/upload/v1656425639/portfolio/pmg-2019-blister_fhtdtv.jpg",
     "title": "Tablet Blister",
     "brand": "Promag",
-    "Country": "Cambodia",
+    "country": "Cambodia",
     "year": 2019,
     "isFeatured": true
   },
@@ -42,7 +42,7 @@
     "title": "Social Media Template",
     "brand": "Nephrisol",
     "year": 2020,
-    "Country": "Philippines",
+    "country": "Philippines",
     "isFeatured": true
   }
 ]
