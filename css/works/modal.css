@@ -8,6 +8,7 @@
   backdrop-filter: blur(10px);
   cursor: zoom-out;
   display: none;
+  z-index: 10;
 }
 
 .modal-container.show {
