@@ -6,11 +6,11 @@ export function showModal(requestId, resultImages) {
   const findImage = resultImages.find((image) => image.id === requestId);
   const { id, imageUrl, title, brand, year, country, category, description } = findImage;
   modalContainer.classList.add("show");
-  // if (window.innerHeight > 900) {
-  //   document.body.style.overflow = "hidden";
-  // }
   document.body.style.overflow = "hidden";
-  document.body.style.position = "fixed";
+  // if (window.innerWidth < 600) {
+  // document.body.style.overflow = "hidden";
+  // document.body.style.position = "fixed";
+  // }
 
   const modalContent = `
     <div class="modal">
