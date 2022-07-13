@@ -38,6 +38,10 @@
   height: 35px;
 }
 
+.social-item svg {
+  fill: var(--color-black);
+}
+
 .social-item:hover:nth-child(1) svg {
   fill: #555;
 }

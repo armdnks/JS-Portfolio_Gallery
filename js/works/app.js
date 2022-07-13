@@ -1,3 +1,6 @@
+import "../layout/header.js";
+import "../layout/footer.js";
+
 import { CONSTANTS } from "../utils/constants.js";
 import { showModal } from "./modal.js";
 

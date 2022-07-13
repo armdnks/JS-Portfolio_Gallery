@@ -70,20 +70,11 @@
   color: var(--color-gray-500);
 }
 
-.modal-title,
-.modal-brand,
-.modal-year,
-.modal-country,
-.modal-category,
-.modal-desc {
+h1[class*="modal-"] {
   font-weight: 400;
 }
 
-.modal-title,
-.modal-brand,
-.modal-year,
-.modal-country,
-.modal-category {
+h1[class*="modal-"]:not(.modal-desc) {
   text-transform: capitalize;
   font-size: 1.2rem;
 }
@@ -153,15 +144,11 @@
     border-bottom-right-radius: 0;
   }
 
-  .modal-group:nth-child(4),
-  .modal-group:nth-child(5),
-  .modal-group:nth-child(6) {
+  .modal-group:nth-child(n + 4) {
     display: none;
   }
 
-  .modal-title,
-  .modal-brand,
-  .modal-year {
+  h1[class*="modal-"] {
     position: absolute;
     left: 3rem;
     color: #fff;

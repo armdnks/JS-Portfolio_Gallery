@@ -40,6 +40,16 @@ body {
   color: var(--color-black);
 }
 
+.back-btn:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.back-btn:active {
+  color: var(--color-black);
+  -webkit-text-stroke: unset;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
