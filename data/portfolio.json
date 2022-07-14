@@ -1,7 +1,6 @@
 [
   {
     "id": "5aa5-627a-9a512058",
-    "code": "20-48",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787069/portfolio/20-48-fb-banner-my_w5hyb2.jpg"
     ],
@@ -10,11 +9,11 @@
     "year": 2020,
     "country": "Malaysia",
     "category": ["Supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "20-48"
   },
   {
     "id": "f09c-d349-1487a5ff",
-    "code": "20-47",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787069/portfolio/20-47-fb-booth-my_bipim3.jpg"
     ],
@@ -23,11 +22,11 @@
     "year": 2020,
     "country": "Malaysia",
     "category": ["Supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "20-47"
   },
   {
     "id": "2b5c-1e76-259953eb",
-    "code": "19-396",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787069/portfolio/19-396-ej-poster-my_tyavui.jpg"
     ],
@@ -36,11 +35,11 @@
     "year": 2019,
     "country": "Malaysia",
     "category": ["Supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "19-396"
   },
   {
     "id": "073c-b1e8-ca637185",
-    "code": "19-392",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787068/portfolio/19-392-ej-banner-my_sqrtza.jpg"
     ],
@@ -49,11 +48,11 @@
     "year": 2019,
     "country": "Malaysia",
     "category": ["Supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "19-392"
   },
   {
     "id": "dbb2-16ad-3cf95fa9",
-    "code": "19-299",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787104/portfolio/19-299-fc-poster-my-2_zgrmye.jpg"
     ],
@@ -62,11 +61,11 @@
     "year": 2019,
     "country": "Malaysia",
     "category": ["Supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "19-299"
   },
   {
     "id": "5148-bc1e-a907daf6",
-    "code": "19-25",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787068/portfolio/19-25-hc-flyer-uae_vp0zt8.jpg"
     ],
@@ -75,11 +74,11 @@
     "year": 2019,
     "country": "Uni Arab Emirates",
     "category": ["Event"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "19-25"
   },
   {
     "id": "6b69-e51d-4c694958",
-    "code": "19-109",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1657787068/portfolio/19-109-ds-web-lk_w0xif9.jpg"
     ],
@@ -88,11 +87,11 @@
     "year": 2019,
     "country": "Sri Lanka",
     "category": ["Ecommerce"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "19-109"
   },
   {
     "id": "0363-5f0d-d99e3d71",
-    "code": "-2022",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656425369/portfolio/hc-2022-flyer_upmyxp.jpg"
     ],
@@ -101,11 +100,11 @@
     "year": 2022,
     "country": "France",
     "category": ["B2B Event"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2022"
   },
   {
     "id": "f8ea-33d9-d97a3da2",
-    "code": "-2021",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656848632/portfolio/dsol-2021-payday_k67qc2.jpg"
     ],
@@ -114,11 +113,11 @@
     "year": 2021,
     "country": "Malaysia",
     "category": ["Lazada"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2021"
   },
   {
     "id": "83ae-ffad-df6d6293",
-    "code": "-2020",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656425659/portfolio/nph-2020-socmed_fxszw3.jpg"
     ],
@@ -127,11 +126,11 @@
     "year": 2020,
     "country": "Philippines",
     "category": ["social media"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2020"
   },
   {
     "id": "4233-9562-1fa1be41",
-    "code": "-2020",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656425439/portfolio/wds-2020-masker_jqutou.jpg"
     ],
@@ -140,11 +139,11 @@
     "year": 2020,
     "country": "Cambodia",
     "category": ["out of home"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2020"
   },
   {
     "id": "f874-2e69-c1dc63a8",
-    "code": "-2019",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656848633/portfolio/hc-2019-pack_process_te9uv9.jpg"
     ],
@@ -153,11 +152,11 @@
     "year": 2019,
     "country": "UAE",
     "category": ["Online Store", "Offline Store"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2019"
   },
   {
     "id": "64f7-5d21-48c6f68c",
-    "code": "-2019",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656425639/portfolio/pmg-2019-blister_fhtdtv.jpg"
     ],
@@ -166,11 +165,11 @@
     "country": "Cambodia",
     "category": ["drugstore", "supermarket"],
     "year": 2019,
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2019"
   },
   {
     "id": "c42a-4383-14931149",
-    "code": "-2019",
     "image_url": [
       "https://res.cloudinary.com/wokeoke/image/upload/v1656425438/portfolio/pmg-2019-pack_seejbt.jpg"
     ],
@@ -179,6 +178,7 @@
     "country": "Cambodia",
     "year": 2019,
     "category": ["drugstore", "supermarket"],
-    "is_featured": false
+    "is_featured": false,
+    "code": "-2019"
   }
 ]
