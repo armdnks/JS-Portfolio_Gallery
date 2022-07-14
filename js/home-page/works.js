@@ -1,11 +1,14 @@
+import { CONSTANTS } from "../utils/constants.js";
+import { snakeToCamel } from "../utils/helper.js";
+
 const worksContainer = document.querySelector(".works-container");
 
-const url = "../data/portfolio.json";
+const url = CONSTANTS.PORTFOLIO_URL;
 
 async function loadGallery() {
   try {
     const res = await fetch(url);
-    const data = await res.json();
+    const data = snakeToCamel(await res.json());
     displayImages(data);
   } catch (error) {
     console.log(error);

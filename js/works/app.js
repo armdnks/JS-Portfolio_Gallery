@@ -3,6 +3,7 @@ import "../layout/footer.js";
 
 import { CONSTANTS } from "../utils/constants.js";
 import { showModal } from "./modal.js";
+import { snakeToCamel } from "../utils/helper.js";
 
 const htmlElement = document.documentElement;
 htmlElement.classList.add(localStorage.getItem("theme"));
@@ -17,8 +18,8 @@ window.addEventListener("DOMContentLoaded", loadImages);
 async function loadImages() {
   try {
     const res = await fetch(CONSTANTS.PORTFOLIO_URL);
-    resultImages = await res.json();
-    resultImages.splice(-1);
+    resultImages = snakeToCamel(await res.json());
+    // resultImages.splice(-1);
     displayImages(resultImages);
     displayButtons(resultImages);
   } catch (error) {
