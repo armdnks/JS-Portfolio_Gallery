@@ -50,7 +50,9 @@ function darkMode() {
 // PAGE INDICATOR
 const pageIndicator = document.querySelector(".page-indicator");
 const pageIndicatorValue = document.querySelector(".page-indicator-value");
-const pageIndicatorPercentage = document.querySelector(".page-indicator-percentage");
+const pageIndicatorPercentage = document.querySelector(
+  ".page-indicator-percentage"
+);
 
 function scrollProgress() {
   const scrollY = document.body.scrollTop || document.documentElement.scrollTop;
@@ -60,7 +62,6 @@ function scrollProgress() {
   const scrollHeight = contentHeight - windowHeight;
   const scrollProgressValue = (scrollY / scrollHeight) * 100;
 
-  console.log(windowHeight === NaN);
   pageIndicatorValue.style.height = scrollProgressValue + "%";
   pageIndicatorPercentage.textContent = Math.floor(scrollProgressValue) + "%";
 }

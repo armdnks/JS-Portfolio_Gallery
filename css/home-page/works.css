@@ -26,7 +26,7 @@
 .works-item {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 5rem;
   position: relative;
 }
@@ -36,7 +36,7 @@
 }
 
 .works-desc {
-  width: 30%;
+  min-width: 30%;
   margin-left: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -49,7 +49,7 @@
   text-align: right;
 }
 
-h1[class*="works-"] {
+h1[class*="works-"]:not(.works-heading) {
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: capitalize;
@@ -65,8 +65,7 @@ h1[class*="works-"] {
 }
 
 .works-img {
-  width: 70%;
-  max-height: 640px;
+  max-height: 600px;
   object-fit: cover;
   border-radius: 0.4rem;
   box-shadow: 0 7rem 7rem -3rem var(--box-shadow);
@@ -158,7 +157,7 @@ h1[class*="works-"] {
     padding: 0 1rem;
   }
 
-  h1[class*="works-"] {
+  h1[class*="works-"]:not(.works-heading) {
     font-size: 1rem;
   }
 

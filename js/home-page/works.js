@@ -9,7 +9,8 @@ async function loadGallery() {
     displayImages(data);
   } catch (error) {
     console.log(error);
-    const worksContainerErrorStyle = "width: 100%; min-height: 10vh; display: flex; align-items: center; justify-conter: center; ";
+    const worksContainerErrorStyle =
+      "width: 100%; min-height: 10vh; display: flex; align-items: center; justify-conter: center; ";
     worksContainer.style = worksContainerErrorStyle;
     worksContainer.innerHTML = `<h1 class="works-container-error">Sorry, there is something wrong.</h1>`;
   }
@@ -17,12 +18,13 @@ async function loadGallery() {
 
 function displayImages(data) {
   const worksImages = data
-    .filter((item) => item.isFeatured === true)
+    // .filter((item) => item.isFeatured === true)
+    .slice(0, 3)
     .map((item) => {
       const { id, imageUrl, title, brand, year } = item;
       return `
         <div class="works-item" data-id="${id}" data-aos="fade-up">
-          <img src="${imageUrl}" alt="works" class="works-img" />
+          <img src="${imageUrl[0]}" alt="works" class="works-img" />
           <div class="works-desc">
             <h1 class="works-title">${title}</h1>
             <h1 class="works-brand">${brand}</h1>

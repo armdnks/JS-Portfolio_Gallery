@@ -4,18 +4,21 @@ const modalContainer = document.querySelector(".modal-container");
 
 export function showModal(requestId, resultImages) {
   const findImage = resultImages.find((image) => image.id === requestId);
-  const { id, imageUrl, title, brand, year, country, category, description } = findImage;
+  const { id, imageUrl, title, brand, year, country, category, description } =
+    findImage;
   modalContainer.classList.add("show");
   document.body.style.overflow = "hidden";
-  // if (window.innerWidth < 600) {
-  // document.body.style.overflow = "hidden";
-  // document.body.style.position = "fixed";
-  // }
 
   const modalContent = `
     <div class="modal">
       <p class="close-warning">${CONSTANTS.CLOSE_MODAL_TEXT}</p>
-      <img src="${imageUrl}" alt="" class="modal-img" />
+      <div class="modal-img-container">
+        <div class="modal-img-btn-container">
+          <button type="button" class="modal-img-prev-btn">prev</button>
+          <button type="button" class="modal-img-next-btn">next</button>
+        </div>
+        <img src="${imageUrl[0]}" alt="" class="modal-img" />
+      </div>
       <div class="modal-content">
         <div class="modal-group">
           <p class="modal-label">title</p>
@@ -39,7 +42,9 @@ export function showModal(requestId, resultImages) {
         </div>
         <div class="modal-group">
           <p class="modal-label">description</p>
-          <p class="modal-desc">${description === undefined ? "..." : description}</p>
+          <p class="modal-desc">${
+            description === undefined ? "..." : description
+          }</p>
         </div>
       </div>
     </div>

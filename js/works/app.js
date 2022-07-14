@@ -37,7 +37,10 @@ form.addEventListener("keypress", (e) => {
 function searchImage(e) {
   const searchString = e.target.value.toLowerCase();
   let filteredImages = resultImages.filter((image) => {
-    return image.title.toLowerCase().includes(searchString) || image.brand.toLowerCase().includes(searchString);
+    return (
+      image.title.toLowerCase().includes(searchString) ||
+      image.brand.toLowerCase().includes(searchString)
+    );
   });
 
   if (filteredImages.length < 1) {
@@ -67,7 +70,7 @@ worksFilter.addEventListener("click", (e) => {
       filteredImages = [...resultImages];
     } else {
       filteredImages = resultImages.filter((image) => {
-        return image.brand === target.dataset.brand;
+        return image.brand.toLowerCase() === target.dataset.brand;
       });
     }
     searchInput.value = "";
@@ -85,7 +88,7 @@ function displayImages(images) {
                 <h1 class="works-title">${title}</h1>
                 <h1 class="works-year">${year}</h1>
             </div>
-            <img src="${imageUrl}" alt="placeholder" class="works-img" />
+            <img src="${imageUrl[0]}" alt="placeholder" class="works-img" />
         </div>
         `;
     })
@@ -103,14 +106,19 @@ function getSingleImage(e) {
   let dataId;
   if (target.classList.contains("works-item")) {
     dataId = target.dataset.id;
-  } else if (target.classList.contains("works-title") || target.classList.contains("works-year")) {
+  } else if (
+    target.classList.contains("works-title") ||
+    target.classList.contains("works-year")
+  ) {
     dataId = target.parentElement.parentElement.dataset.id;
   }
   showModal(dataId, resultImages);
 }
 
 function displayButtons(images) {
-  const buttons = [...new Set(images.map((image) => image.brand))];
+  const buttons = [
+    ...new Set(images.map((image) => image.brand.toLowerCase())),
+  ];
   const filterButtons = buttons
     .sort()
     .map((brand) => {

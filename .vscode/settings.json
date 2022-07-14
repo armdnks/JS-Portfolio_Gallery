@@ -6,10 +6,14 @@
   "html.format.wrapLineLength": 999,
   "liveServer.settings.CustomBrowser": "chrome",
   "liveServer.settings.port": 5500,
-  "prettier.printWidth": 999,
+  // "prettier.printWidth": 999,
   "terminal.integrated.fontSize": 13,
 
   "[markdown]": {
     "editor.wordWrap": "off"
+  },
+
+  "[json]": {
+    "editor.wordWrap": "on"
   }
 }
