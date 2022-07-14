@@ -14,8 +14,17 @@ jsonReader(filePath, (err, data) => {
     for (let i = 0; i < data.length; i++) {
       data[i].id = uniqueID();
       data[i].code = JSON.stringify(
-        data[i].imageUrl[0].match(/\d*-\d*(?=\-)/g)
-      ).replace(/[^\d\-]/g, "");
+        data[i].image_url[0].match(/\d*-\d*(?=\-)/g)
+      )
+        .replace(/[^\d\-]/g, "")
+        .replace(/(?<=\-)[\d]*/g, (x) => {
+          if (x.length === 1) {
+            return "00" + x;
+          } else if (x.length === 2) {
+            return "0" + x;
+          }
+          return x;
+        });
     }
 
     data.sort(function (a, b) {
