@@ -1,12 +1,11 @@
 /**
- * Generate Random ID, Code, and Sort on json file
+ * @title     Generate Random ID, Code, and Sort on json file
+ * @terminal  node update.js
  */
 
 const fs = require("fs");
 const { jsonReader, uniqueID } = require("./helper.js");
-
-// const dirPath = "../data";
-const filePath = "../data/portfolio.json";
+const { filePath } = require("./constants.js");
 
 jsonReader(filePath, (err, data) => {
   if (err) {
