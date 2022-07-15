@@ -35,6 +35,7 @@
   z-index: 1;
   display: none;
   width: 80%;
+  text-transform: capitalize;
 }
 
 .works-item:hover .works-text {
