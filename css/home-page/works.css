@@ -65,6 +65,7 @@ h1[class*="works-"]:not(.works-heading) {
 }
 
 .works-img {
+  width: 400px;
   max-height: 600px;
   object-fit: cover;
   border-radius: 0.4rem;
